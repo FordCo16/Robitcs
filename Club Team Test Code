@@ -19,8 +19,8 @@ void RemoteControlOmnidrive()
    
    //vehicle movement
    motor[frontRightMotor] = joy_Y_1 - joy_X_1 + joy_X_2;
-   motor[frontleftMotor] = joy_Y_1 + joy_X_1 + joy_X_2;
-   motor[rearRightMotor] = -Joy_Y_1 - joy_X_1 + joy_X_2;
+   motor[frontleftMotor] = joy_Y_1 + joy_X_1 - joy_X_2;
+   motor[rearRightMotor] = -Joy_Y_1 - joy_X_1 - joy_X_2;
    motor[rearLeftMotor] = -joy_Y_1 + Joy_X_1 + Joy_X_2;
    
    //Cap motor power @ 126
