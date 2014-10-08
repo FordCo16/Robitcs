@@ -1,7 +1,7 @@
 #pragma config(Motor,  port1,          frontRightMotor,    tmotorVex393_HBridge, openLoop)
-#pragma config(Motor,  port10,          rearRightMotor,    tmotorVex393_HBridge, openLoop)
-#pragma config(Motor,  port10,         frontLeftMotor,    tmotorVex393_HBridge, openLoop)
-#pragma config(Motor,  port10,          rearLeftMotor,    tmotorVex393_HBridge, openLoop)
+#pragma config(Motor,  port2,          rearRightMotor,    tmotorVex393_HBridge, openLoop)
+#pragma config(Motor,  port3,         frontLeftMotor,    tmotorVex393_HBridge, openLoop)
+#pragma config(Motor,  port4,          rearLeftMotor,    tmotorVex393_HBridge, openLoop)
 //Pregenerated code
 
 //Remote Control Omnidrive function
