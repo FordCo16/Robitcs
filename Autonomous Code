@@ -19,7 +19,7 @@
 
 void pointTurnRight(float degrees)
 {
-  While((SensorValue[frontRightEncoder] + SensorValue[rearLefttEncoder]) / 2 <= degrees*2)
+  While((SensorValue[frontRightEncoder] + SensorValue[rearLeftEncoder]) / 2 <= degrees*2)
   {
   
    motor[frontRightMotor , rearLeftMotor] = 126;
@@ -31,7 +31,7 @@ void pointTurnRight(float degrees)
 
 void pointTurnLeft(float degrees)
 {
-  While((SensorValue[frontRightEncoder] + SensorValue[rearLefttEncoder]) / 2 >= degrees*2)
+  While((SensorValue[frontRightEncoder] + SensorValue[rearLeftEncoder]) / 2 >= degrees*2)
   {
   
    motor[frontRightMotor , rearLeftMotor] = -126;
@@ -43,7 +43,7 @@ void pointTurnLeft(float degrees)
 
 Void forward(float distance)
 {
-  while((SensorValue[frontRightEncoder] + SensorValue[rearLefttEncoder]) / 2 <= distance)
+  while((SensorValue[frontRightEncoder] + SensorValue[rearLeftEncoder]) / 2 <= distance)
   {
   
     motor[frontRightMotor , frontLeftMotor  ,rearRightMotor ,  rearLeftMotor] = 126;
@@ -54,7 +54,7 @@ Void forward(float distance)
 
 Void reverse(float distance)
 {
-  while((SensorValue[frontRightEncoder] + SensorValue[rearLefttEncoder]) / 2 <= distance)
+  while((SensorValue[frontRightEncoder] + SensorValue[rearLeftEncoder]) / 2 <= distance)
   {
   
     motor[frontRightMotor , frontLeftMotor  ,rearRightMotor ,  rearLeftMotor] = -126;
