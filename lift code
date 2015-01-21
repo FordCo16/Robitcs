@@ -1,0 +1,75 @@
+if(vexRT[Btn6D] == 1)
+		{
+
+				if(SensorValue[rightPotentiometer] == SensorValue[leftPotentiometer])
+				{
+
+					motor[rightLiftMotor] = 126;
+					motor[rightLiftMotor2] = 126;
+					motor[leftLiftMotor] = 126;
+					motor[leftLiftMotor2] = 126;
+
+				}
+				else if(SensorValue[rightPotentiometer] > SensorValue[leftPotentiometer])
+				{
+
+					motor[rightLiftMotor] = 126;
+					motor[rightLiftMotor2] = 126;
+					motor[leftLiftMotor] = 120;
+					motor[leftLiftMotor2] = 120;
+
+				}
+				else if(SensorValue[rightPotentiometer] < SensorValue[leftPotentiometer])
+				{
+
+
+
+					motor[rightLiftMotor] = 120;
+					motor[rightLiftMotor2] = 120;
+					motor[leftLiftMotor] = 126;
+					motor[leftLiftMotor2] = 126;
+
+				}
+
+		}
+		else if(vexRT[Btn6U] == 1)
+		{
+
+				if(SensorValue[rightPotentiometer] == SensorValue[leftPotentiometer])
+				{
+
+					motor[rightLiftMotor] = -126;
+					motor[rightLiftMotor2] = -126;
+					motor[leftLiftMotor] = -126;
+					motor[leftLiftMotor2] = -126;
+
+				}
+				else if(SensorValue[rightPotentiometer] > SensorValue[leftPotentiometer])
+				{
+
+					motor[rightLiftMotor] = -120;
+					motor[rightLiftMotor2] = -120;
+					motor[leftLiftMotor] = -126;
+					motor[leftLiftMotor2] = -126;
+
+				}
+				else if(SensorValue[rightPotentiometer]  < SensorValue[leftPotentiometer])
+				{
+
+					motor[rightLiftMotor] = -126;
+					motor[rightLiftMotor2] = -126;
+					motor[leftLiftMotor] = -120;
+					motor[leftLiftMotor2] = -120;
+
+				}
+
+		}
+		else
+		{
+
+			motor[rightLiftMotor] = 0;
+			motor[rightLiftMotor2] = 0;
+			motor[leftLiftMotor] = 0;
+			motor[leftLiftMotor2] = 0;
+
+		}
