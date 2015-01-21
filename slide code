@@ -1,0 +1,18 @@
+if(vexRT[Btn5U] == 1)
+		{
+
+			motor[scoreMechMotor]  = 60;
+
+		}
+		else if(vexRT[Btn5D] == 1)
+		{
+
+			motor[scoreMechMotor] = -60;
+
+		}
+		else
+		{
+
+			motor[scoreMechMotor] = 0;
+
+		}
